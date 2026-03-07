@@ -42,17 +42,44 @@ tr:nth-child(even) {
   padding: 0.5rem 1.25rem;
 }
 
-/* Header with disconnect */
+/* Header with navigation */
 
 .app-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
 .app-header h1 {
   margin: 0;
+}
+
+.app-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
+
+.nav-btn.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
 }
 
 .btn-disconnect {
